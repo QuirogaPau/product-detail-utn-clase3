@@ -1,5 +1,4 @@
 import { Box, Badge, Image } from '@chakra-ui/react'
-import './Card.css'
 
 function Card(producto) {
   return (
