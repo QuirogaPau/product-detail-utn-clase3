@@ -17,9 +17,9 @@ function ProductDetail({producto, close}) {
     {/* caja que contiene las otras */}
     <Box 
     as="section"
-    mt="10px" 
-    pt="10px" 
-    maxW='md' 
+    mt={{ base: "2", md: "10px" }}
+    pt={{ base: "2", md: "10px" }}
+    maxW={{ base: "100%", md: "md" }} 
     borderWidth='1px' 
     borderRadius='lg'
     boxShadow='sm' 
@@ -32,7 +32,7 @@ function ProductDetail({producto, close}) {
       as='button' 
       borderRadius='lg'
       display='flex'
-      justifyItems='end'
+      justifyItems={{ base: 'center', md: 'end' }}
       position='fixed' 
       left='auto'
       top='auto'
@@ -45,7 +45,6 @@ function ProductDetail({producto, close}) {
       <Box  
       as='figure'
       p='8' 
-       
       display='flex' 
       justifyContent='center'
       mb='2'>

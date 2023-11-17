@@ -82,8 +82,8 @@ function App() {
     <div>
 
       <Header/>
-    <div>
-      <Grid templateColumns='repeat(3, 1fr)' gap='1'>
+    <div className='card-grid'>
+      <Grid templateColumns={{ base: '1fr', md: 'repeat(3, 1fr)' }} gap='2' justifyItems='center'>
     {productos.map((producto) => (  
     <div  key={producto.id} onClick={() => manejoDelClick(producto)}>
         <Card 
