@@ -6,7 +6,7 @@ function Header() {
 
  
  return (
-    <header className='header-mobile'>
+    <header className='header-mobile' style={{marginBottom: '10px'}}>
       <Flex
     as='nav'
     align='center'

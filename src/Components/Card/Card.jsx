@@ -11,15 +11,17 @@ function Card(producto) {
     maxW='md' 
     borderWidth='1px' 
     borderRadius='lg' 
-    overflow='hidden' 
+    overflow='hidden'
+    cursor="pointer"
     >
 
       <Box 
       display='flex' 
       alignItems='center' 
       justifyContent="center">
-      {<Image boxSize='300px' 
-      objectFit='cover'
+      {<Image 
+      boxSize={{ base: '200px', md: '320px' }}
+      objectFit="cover"
       src={(`../../image/${producto.imagen}.jpg`)} 
       alt={producto.nombre}  />  }
       </Box>

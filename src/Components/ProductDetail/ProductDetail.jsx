@@ -22,21 +22,23 @@ function ProductDetail({producto, close}) {
     maxW={{ base: "100%", md: "md" }} 
     borderWidth='1px' 
     borderRadius='lg'
-    boxShadow='sm' 
+    boxShadow='dark-lg'
     overflow='hidden'
     w='100%'
     bg='whitesmoke' 
-    
+
     >
        <Button 
       as='button' 
       borderRadius='lg'
+      p='4'
       display='flex'
       justifyItems={{ base: 'center', md: 'end' }}
       position='fixed' 
       left='auto'
       top='auto'
       zIndex='1'
+      boxShadow='lg'
       onClick={close}
       >  
       <CloseIcon/>
@@ -44,12 +46,13 @@ function ProductDetail({producto, close}) {
       {/* Contiene la imagen */}
       <Box  
       as='figure'
-      p='8' 
+      p='6' 
       display='flex' 
       justifyContent='center'
       mb='2'>
-      {<Image boxSize='300px' 
-      objectFit='cover'
+      {<Image 
+      boxSize={{ base: '200px', md: '320px' }}
+      objectFit="cover"
       src={(`../../image/${producto.imagen}.jpg`)} 
       alt={producto.nombre}  />  }
       </Box>
